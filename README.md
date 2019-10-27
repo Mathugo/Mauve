@@ -11,7 +11,7 @@ You must install Java, JavaFX :
 * [JavaFX](https://openjfx.io/) 
 
 ## Authors
-* **Remi LEFEVRE** - *Front End - JavaFX*
-* **Arthur KADRAOUI-NICOD** - *Front End - JavaFX - Graphics*
+* **Remi LEFAIVRE** - *Front End - JavaFX*
+* **Arthur KHADRAOUI-NICOD** - *Front End - JavaFX - Graphics*
 * **Hugo MATH** - *Back End - Server*
 
