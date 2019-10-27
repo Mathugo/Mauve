@@ -1,6 +1,6 @@
 # Mauve
 Streaming music project using JavaFX 
-![alt text](https://github.com/Mathugo/Mauve/edit/master/mauve.png)
+![alt text](https://github.com/Mathugo/Mauve/blob/master/mauve.png)
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
