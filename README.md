@@ -15,3 +15,4 @@ You must install Java, JavaFX :
 * **Arthur KHADRAOUI-NICOD** - *Front End - JavaFX - Graphics*
 * **Hugo MATH** - *Back End - Server*
 
+![alt text](https://github.com/Mathugo/Mauve_Server/blob/master/mauve_main.png)
