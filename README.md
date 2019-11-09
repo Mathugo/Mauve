@@ -1,5 +1,5 @@
 
-![alt text](https://github.com/Mathugo/Mauve/blob/master/mauve.png)
+![alt text](https://github.com/Mathugo/Mauve/blob/master/img/mauve.png)
 # Mauve
 Streaming music project using JavaFX 
 ## Getting Started
@@ -15,4 +15,4 @@ You must install Java, JavaFX :
 * **Arthur KHADRAOUI-NICOD** - *Front End - JavaFX - Graphics*
 * **Hugo MATH** - *Back End - Server*
 
-![alt text](https://github.com/Mathugo/Mauve_Server/blob/master/mauve_main.png)
+![alt text](https://github.com/Mathugo/Mauve_Server/blob/master/img/mauve_main.png)
