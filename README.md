@@ -9,6 +9,10 @@ You must install Java, JavaFX :
 * [jdk](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Version 8 because of compatibilities
 * [jre](https://www.java.com/en/download/win10.jsp) - Java 
 * [JavaFX](https://openjfx.io/) 
+### Settings
+If you want to run it localy you must change IP and PORT in [MediaPlayer2](https://github.com/Mathugo/Mauve/blob/master/src/mediaplayer2/MediaPlayer2.java)
+``` String host="localhost";```
+``` int port=YOURPORT; ```
 
 ## Authors
 * **Remi LEFAIVRE** - *Front End - JavaFX*
