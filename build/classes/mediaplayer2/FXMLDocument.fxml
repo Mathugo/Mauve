@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediaplayer2.FXMLDocumentController">
+   <children>
+      <Separator layoutX="120.0" orientation="VERTICAL" prefHeight="450.0" prefWidth="0.0" />
+      <Pane prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: black;">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #222222;" text="mauve" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane fx:id="degradeGauche" layoutY="40.0" prefHeight="410.0" prefWidth="140.0" stylesheets="@Style.css">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="120.0" text="Bibliotheque" textAlignment="CENTER" textFill="WHITE" underline="true" />
+            <Button alignment="CENTER" focusTraversable="false" layoutY="50.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: transparent;" text="Albums" textAlignment="CENTER" textFill="WHITE" />
+            <Button alignment="CENTER" focusTraversable="false" layoutY="90.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: transparent;" text="Artistes" textAlignment="CENTER" textFill="WHITE" />
+            <MenuButton contentDisplay="CENTER" layoutX="40.0" layoutY="130.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Playlists " textFill="WHITE">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Playlist 1" />
+                <MenuItem mnemonicParsing="false" text="Playlist 2" />
+              </items>
+            </MenuButton>
+            <ImageView fx:id="Albums" fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Album.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Artistes" fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Artiste.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Playlists" fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Playlist.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Open" layoutX="55.0" layoutY="365.0" mnemonicParsing="false" onAction="#choixMusique" prefHeight="30.0" prefWidth="30.0" stylesheets="@Style.css" />
+         </children>
+      </Pane>
+      <Pane layoutX="140.0" prefHeight="450.0" prefWidth="660.0" style="-fx-background-color: black;">
+         <children>
+            <Pane layoutY="395.0" prefHeight="55.0" prefWidth="660.0" style="-fx-background-color: #222222;">
+               <children>
+                  <Button fx:id="Previous" layoutX="25.0" layoutY="10.0" mnemonicParsing="false" onAction="#previousMusique" prefHeight="28.0" prefWidth="28.0" stylesheets="@Style.css" />
+                  <Button fx:id="Play" layoutX="55.0" layoutY="10.0" mnemonicParsing="false" onAction="#playMusique" prefHeight="28.0" prefWidth="28.0" stylesheets="@Style.css" />
+                  <Button fx:id="Pause" layoutX="85.0" layoutY="10.0" mnemonicParsing="false" onAction="#pauseMusique" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: ;" stylesheets="@Style.css" />
+                  <Button fx:id="Next" layoutX="117.0" layoutY="10.0" mnemonicParsing="false" onAction="#nextMusique" prefHeight="28.0" prefWidth="28.0" stylesheets="@Style.css" />
+                  <Slider fx:id="Avancement" layoutX="180.0" layoutY="36.0" prefHeight="5.0" prefWidth="340.0" stylesheets="@Style.css" />
+                  <Slider fx:id="Volume" layoutX="546.0" layoutY="16.0" prefHeight="5.0" prefWidth="100.0" stylesheets="@Style.css" />
+                  <Label fx:id="Musique" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="8.0" prefHeight="17.0" prefWidth="255.0" stylesheets="@Style.css" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                  <ToggleButton fx:id="RepeatOff" layoutX="180.0" layoutY="1.0" mnemonicParsing="false" onAction="#repeatMusiqueOn" prefHeight="25.0" prefWidth="30.0" stylesheets="@Style.css" />
+                  <ToggleButton fx:id="RandomOff" layoutX="470.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: transparent;" stylesheets="@Style.css" />
+               </children>
+            </Pane>
+            <Pane fx:id="degradeHaut" prefHeight="40.0" prefWidth="660.0" stylesheets="@Style.css" />
+            <ScrollPane layoutY="40.0" prefHeight="355.0" prefWidth="660.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="355.0" prefWidth="660.0" style="-fx-background-color: black;">
+                     <children>
+                        <Button fx:id="b1" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="Nekfeu - Mauvaise Graine.mp3" textFill="WHITE" />
+                        <Button fx:id="b2" layoutY="35.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="Queen - Bohemian Rhapsody.mp3" textFill="WHITE" />
+                        <Button fx:id="b3" layoutY="70.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="kess-against-the-law-instrumental.mp3" textFill="WHITE" />
+                        <Button fx:id="b4" layoutY="105.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="Rev Theory - Hell Yeah.mp3" textFill="WHITE" />
+                        <Button fx:id="b5" layoutY="140.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="free-boom-bap-type-beat-hip-hop-instrumental-ignorance-prod-d-low.mp3" textFill="WHITE" />
+                        <Button fx:id="b6" layoutY="175.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="Noir Desir - L'Homme Presse.mp3" textFill="WHITE" />
+                        <Button fx:id="b7" layoutX="321.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="Dr Dre - Still DRE.mp3" textFill="WHITE" />
+                        <Button fx:id="b8" layoutX="321.0" layoutY="35.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="Outkast - Ms.Jackson.mp3" textFill="WHITE" />
+                        <Button fx:id="b9" layoutX="321.0" layoutY="70.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="Red Hot Chili Peppers - Snow.mp3" textFill="WHITE" />
+                        <Button fx:id="b10" layoutX="321.0" layoutY="105.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="nul.mp3" textFill="WHITE" />
+                        <Button fx:id="b11" layoutX="321.0" layoutY="140.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="Eminem - Lose Yourself.mp3" textFill="WHITE" />
+                        <Button fx:id="b12" layoutX="321.0" layoutY="175.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="319.0" style="-fx-background-color: purple;" text="Paramore - Misery Business.mp3" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
