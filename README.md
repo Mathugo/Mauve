@@ -11,8 +11,8 @@ You must install Java, JavaFX :
 * [JavaFX](https://openjfx.io/) 
 ### Settings
 If you want to run it localy you must change IP and PORT in [MediaPlayer2](https://github.com/Mathugo/Mauve/blob/master/src/mediaplayer2/MediaPlayer2.java)
-``` String host="localhost";```
-``` int port=YOURPORT; ```
+* ``` String host="localhost";```
+* ``` int port=YOURPORT; ```
 
 ## Authors
 * **Remi LEFAIVRE** - *Front End - JavaFX*
